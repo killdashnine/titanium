@@ -1,0 +1,7 @@
+default         0
+timeout         3
+
+title	Titanium Kernel 0.1-alpha
+root	(fd0)
+kernel	/titanium
+boot

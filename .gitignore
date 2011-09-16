@@ -1,0 +1,6 @@
+build/
+nbproject/
+Documentation/
+dist/Debug/
+dist/floppy.img
+.dep.inc

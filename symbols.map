@@ -1,0 +1,602 @@
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/staticallocator.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/staticallocator.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/staticallocator.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/video.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/video.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/video.o
+ .rodata._ZTVN4Core8ResourceE
+                0x0000000000000000       0x10 build/Debug/GNU-Linux-x86/video.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/terminal.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/terminal.o
+ .rodata._ZTVN4Core8ResourceE
+                0x0000000000000000       0x10 build/Debug/GNU-Linux-x86/terminal.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/grub.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/grub.o
+ .rodata._ZTVN4Core8ResourceE
+                0x0000000000000000       0x10 build/Debug/GNU-Linux-x86/grub.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .rodata._ZTVN4Core9AllocatorE
+                0x0000000000000000       0x18 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .rodata._ZTVN4Core8ResourceE
+                0x0000000000000000       0x10 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/gdt.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/gdt.o
+ .rodata._ZTVN4Core8ResourceE
+                0x0000000000000000       0x10 build/Debug/GNU-Linux-x86/gdt.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/console.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/console.o
+ .rodata._ZTVN4Core8ResourceE
+                0x0000000000000000       0x10 build/Debug/GNU-Linux-x86/console.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/loader.o
+
+.text           0x0000000000100000     0x1420
+                0x0000000000100000                code = .
+                0x0000000000100000                _code = .
+                0x0000000000100000                __code = .
+ *(.text)
+ .text          0x0000000000100000      0x264 build/loader.o
+                0x0000000000100000                start
+                0x0000000000100037                gdt_flush
+                0x0000000000100056                _idt_load
+                0x0000000000100057                _switch_to
+                0x0000000000100060                _isr0
+                0x000000000010006a                _isr1
+                0x0000000000100074                _isr2
+                0x000000000010007e                _isr3
+                0x0000000000100088                _isr4
+                0x0000000000100092                _isr5
+                0x000000000010009c                _isr6
+                0x00000000001000a6                _isr7
+                0x00000000001000b0                _isr8
+                0x00000000001000b8                _isr9
+                0x00000000001000c2                _isr10
+                0x00000000001000ca                _isr11
+                0x00000000001000d2                _isr12
+                0x00000000001000da                _isr13
+                0x00000000001000e2                _isr14
+                0x00000000001000ed                _isr15
+                0x00000000001000f4                _isr16
+                0x00000000001000fb                _isr17
+                0x0000000000100102                _isr18
+                0x0000000000100109                _isr19
+                0x0000000000100110                _isr20
+                0x0000000000100117                _isr21
+                0x000000000010011e                _isr22
+                0x0000000000100125                _isr23
+                0x000000000010012c                _isr24
+                0x0000000000100133                _isr25
+                0x000000000010013a                _isr26
+                0x0000000000100141                _isr27
+                0x0000000000100148                _isr28
+                0x000000000010014f                _isr29
+                0x0000000000100156                _isr30
+                0x000000000010015d                _isr31
+                0x00000000001001b2                _irq0
+                0x00000000001001b9                _irq1
+                0x00000000001001c0                _irq2
+                0x00000000001001c7                _irq3
+                0x00000000001001ce                _irq4
+                0x00000000001001d5                _irq5
+                0x00000000001001dc                _irq6
+                0x00000000001001e3                _irq7
+                0x00000000001001ea                _irq8
+                0x00000000001001f1                _irq9
+                0x00000000001001f8                _irq10
+                0x00000000001001ff                _irq11
+                0x0000000000100206                _irq12
+                0x000000000010020d                _irq13
+                0x0000000000100214                _irq14
+                0x000000000010021b                _irq15
+                0x0000000000100246                _read_cr0
+                0x000000000010024a                _write_cr0
+                0x0000000000100255                _read_cr3
+                0x0000000000100259                _write_cr3
+ *fill*         0x0000000000100264        0xc 00
+ .text          0x0000000000100270       0xa5 build/Debug/GNU-Linux-x86/staticallocator.o
+                0x0000000000100270                Core::StaticAllocator::allocate(unsigned long)
+                0x00000000001002a0                Core::StaticAllocator::free(unsigned long)
+                0x00000000001002b0                Core::StaticAllocator::startResource()
+                0x00000000001002c0                Core::StaticAllocator::getResourceName()
+                0x00000000001002d0                Core::StaticAllocator::getInstance(unsigned long)
+                0x0000000000100300                Core::StaticAllocator::getInstance()
+                0x0000000000100310                Core::StaticAllocator::printDebug()
+ *fill*         0x0000000000100315        0xb 00
+ .text          0x0000000000100320      0x13a build/Debug/GNU-Linux-x86/video.o
+                0x0000000000100320                Core::Video::clearBuffer()
+                0x0000000000100350                Core::Video::write(void*, unsigned long)
+                0x0000000000100390                Core::Video::getTerminalType()
+                0x00000000001003a0                Core::Video::startResource()
+                0x00000000001003b0                Core::Video::getResourceName()
+                0x00000000001003c0                Core::Video::getInstance()
+                0x0000000000100430                Core::Video::Video()
+                0x0000000000100430                Core::Video::Video()
+ *fill*         0x000000000010045a        0x6 00
+ .text          0x0000000000100460      0x124 build/Debug/GNU-Linux-x86/cppsup.o
+                0x0000000000100460                __cxa_pure_virtual
+                0x0000000000100470                operator new(unsigned int)
+                0x0000000000100490                operator new[](unsigned int)
+                0x00000000001004b0                operator delete(void*)
+                0x00000000001004d0                operator delete[](void*)
+                0x00000000001004f0                __cxa_atexit
+                0x0000000000100540                __cxa_finalize
+ *fill*         0x0000000000100584        0xc 00
+ .text          0x0000000000100590      0x2b5 build/Debug/GNU-Linux-x86/terminal.o
+                0x0000000000100590                Core::Terminal::startResource()
+                0x00000000001005a0                Core::Terminal::getResourceName()
+                0x00000000001005b0                Core::Terminal::Terminal(Core::CharacterDevice*)
+                0x00000000001005b0                Core::Terminal::Terminal(Core::CharacterDevice*)
+                0x0000000000100620                Core::Terminal::put(int, int, char)
+                0x0000000000100670                Core::Terminal::put(int, int, char, short)
+                0x00000000001006d0                Core::Terminal::setColor(short)
+                0x00000000001006f0                Core::Terminal::put(char)
+                0x00000000001007d0                Core::Terminal::write(char const*)
+                0x0000000000100840                Core::Terminal::scroll()
+ *fill*         0x0000000000100845        0xb 00
+ .text          0x0000000000100850      0x25b build/Debug/GNU-Linux-x86/grub.o
+                0x0000000000100850                Grub::GrubChecker::getResourceName()
+                0x0000000000100860                Grub::GrubChecker::startResource()
+                0x0000000000100a60                Grub::GrubChecker::GrubChecker(unsigned long, unsigned long)
+                0x0000000000100a60                Grub::GrubChecker::GrubChecker(unsigned long, unsigned long)
+                0x0000000000100aa0                Grub::GrubChecker::getMemorySize()
+ *fill*         0x0000000000100aab        0x5 00
+ .text          0x0000000000100ab0       0xc5 build/Debug/GNU-Linux-x86/kernelallocator.o
+                0x0000000000100ab0                Core::KernelAllocator::allocate(unsigned long)
+                0x0000000000100ad0                Core::KernelAllocator::free(unsigned long)
+                0x0000000000100af0                Core::KernelAllocator::startResource()
+                0x0000000000100b00                Core::KernelAllocator::getResourceName()
+                0x0000000000100b10                Core::KernelAllocator::getInstance()
+                0x0000000000100b60                Core::KernelAllocator::KernelAllocator()
+                0x0000000000100b60                Core::KernelAllocator::KernelAllocator()
+                0x0000000000100b70                Core::KernelAllocator::printDebug()
+ *fill*         0x0000000000100b75        0xb 00
+ .text          0x0000000000100b80      0x1d2 build/Debug/GNU-Linux-x86/kernel.o
+                0x0000000000100b80                kernel
+ *fill*         0x0000000000100d52        0xe 00
+ .text          0x0000000000100d60      0x20f build/Debug/GNU-Linux-x86/gdt.o
+                0x0000000000100d60                I386::GDT::getResourceName()
+                0x0000000000100d70                I386::GDT::GDT()
+                0x0000000000100d70                I386::GDT::GDT()
+                0x0000000000100db0                I386::GDT::getInstance()
+                0x0000000000100e10                I386::GDT::setGate(int, unsigned long, unsigned long, unsigned char, unsigned char)
+                0x0000000000100ea0                I386::GDT::startResource()
+ *fill*         0x0000000000100f6f        0x1 00
+ .text          0x0000000000100f70      0x199 build/Debug/GNU-Linux-x86/resource.o
+                0x0000000000100f70                Core::ResourceManager::ResourceManager()
+                0x0000000000100f70                Core::ResourceManager::ResourceManager()
+                0x0000000000100f90                Core::ResourceManager::registerResource(Core::Resource*)
+                0x00000000001010b0                Core::ResourceManager::getInstance()
+ *fill*         0x0000000000101109        0x7 00
+ .text          0x0000000000101110       0x38 build/Debug/GNU-Linux-x86/architecture.o
+                0x0000000000101110                Core::Architecture::detectArchitecture()
+ *fill*         0x0000000000101148        0x8 00
+ .text          0x0000000000101150      0x2be build/Debug/GNU-Linux-x86/console.o
+                0x0000000000101150                Core::Console::startResource()
+                0x0000000000101160                Core::Console::getResourceName()
+                0x0000000000101170                Core::Console::getInstance()
+                0x00000000001011c0                Core::Console::Console()
+                0x00000000001011c0                Core::Console::Console()
+                0x00000000001011d0                Core::Console::getActiveTerminal()
+                0x00000000001011e0                Core::Console::copyBuffer()
+                0x0000000000101210                Core::Console::put(int, int, char)
+                0x0000000000101250                Core::Console::switchTerminal(Core::Terminal*)
+                0x0000000000101280                Core::Console::write(char const*)
+                0x0000000000101340                Core::Console::write(char const*, short)
+                0x0000000000101420                . = ALIGN (0x20)
+ *fill*         0x000000000010140e       0x12 00
+
+.iplt           0x0000000000101420        0x0
+ .iplt          0x0000000000000000        0x0 build/loader.o
+
+.rel.dyn        0x0000000000101420        0x0
+ .rel.iplt      0x0000000000000000        0x0 build/loader.o
+ .rel.text      0x0000000000000000        0x0 build/loader.o
+ .rel.rodata._ZTVN4Core9AllocatorE
+                0x0000000000000000        0x0 build/loader.o
+ .rel.rodata._ZTVN4Core8ResourceE
+                0x0000000000000000        0x0 build/loader.o
+ .rel.rodata._ZTVN4Core15CharacterDeviceE
+                0x0000000000000000        0x0 build/loader.o
+
+.rodata         0x0000000000101420       0x20
+                0x0000000000101420                rodata = .
+                0x0000000000101420                _rodata = .
+                0x0000000000101420                __rodata = .
+ *(.data)
+ .data          0x0000000000101420        0x0 build/Debug/GNU-Linux-x86/staticallocator.o
+ .data          0x0000000000101420        0x4 build/Debug/GNU-Linux-x86/video.o
+                0x0000000000101420                Core::Video::_buffer
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/cppsup.o
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/terminal.o
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/grub.o
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/kernel.o
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/gdt.o
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/resource.o
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/architecture.o
+ .data          0x0000000000101424        0x0 build/Debug/GNU-Linux-x86/console.o
+                0x0000000000101440                . = ALIGN (0x20)
+ *fill*         0x0000000000101424       0x1c 00
+
+.rodata.str1.1  0x0000000000101440      0x205
+ .rodata.str1.1
+                0x0000000000101440       0x10 build/Debug/GNU-Linux-x86/staticallocator.o
+ .rodata.str1.1
+                0x0000000000101450        0x6 build/Debug/GNU-Linux-x86/video.o
+ .rodata.str1.1
+                0x0000000000101456        0x9 build/Debug/GNU-Linux-x86/terminal.o
+ .rodata.str1.1
+                0x000000000010145f       0xcc build/Debug/GNU-Linux-x86/grub.o
+                                         0xce (size before relaxing)
+ .rodata.str1.1
+                0x000000000010152b       0x10 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .rodata.str1.1
+                0x000000000010153b       0x6e build/Debug/GNU-Linux-x86/kernel.o
+                                         0x77 (size before relaxing)
+ .rodata.str1.1
+                0x00000000001015a9       0x18 build/Debug/GNU-Linux-x86/gdt.o
+ .rodata.str1.1
+                0x00000000001015c1       0x5e build/Debug/GNU-Linux-x86/resource.o
+ .rodata.str1.1
+                0x000000000010161f       0x1e build/Debug/GNU-Linux-x86/architecture.o
+ .rodata.str1.1
+                0x000000000010163d        0x8 build/Debug/GNU-Linux-x86/console.o
+
+.rodata._ZTVN4Core15StaticAllocatorE
+                0x0000000000101648       0x18
+ .rodata._ZTVN4Core15StaticAllocatorE
+                0x0000000000101648       0x18 build/Debug/GNU-Linux-x86/staticallocator.o
+                0x0000000000101648                vtable for Core::StaticAllocator
+
+.rodata._ZTVN4Core9AllocatorE
+                0x0000000000101660       0x18
+ .rodata._ZTVN4Core9AllocatorE
+                0x0000000000101660       0x18 build/Debug/GNU-Linux-x86/staticallocator.o
+                0x0000000000101660                vtable for Core::Allocator
+
+.rodata._ZTVN4Core8ResourceE
+                0x0000000000101678       0x10
+ .rodata._ZTVN4Core8ResourceE
+                0x0000000000101678       0x10 build/Debug/GNU-Linux-x86/staticallocator.o
+                0x0000000000101678                vtable for Core::Resource
+
+.rodata._ZTVN4Core5VideoE
+                0x0000000000101688       0x1c
+ .rodata._ZTVN4Core5VideoE
+                0x0000000000101688       0x1c build/Debug/GNU-Linux-x86/video.o
+                0x0000000000101688                vtable for Core::Video
+
+.rodata._ZTVN4Core15CharacterDeviceE
+                0x00000000001016a8       0x1c
+ .rodata._ZTVN4Core15CharacterDeviceE
+                0x00000000001016a8       0x1c build/Debug/GNU-Linux-x86/video.o
+                0x00000000001016a8                vtable for Core::CharacterDevice
+
+.rodata._ZTVN4Core8TerminalE
+                0x00000000001016c8       0x10
+ .rodata._ZTVN4Core8TerminalE
+                0x00000000001016c8       0x10 build/Debug/GNU-Linux-x86/terminal.o
+                0x00000000001016c8                vtable for Core::Terminal
+
+.rodata.str1.4  0x00000000001016d8       0x68
+ .rodata.str1.4
+                0x00000000001016d8       0x24 build/Debug/GNU-Linux-x86/grub.o
+ .rodata.str1.4
+                0x00000000001016fc       0x44 build/Debug/GNU-Linux-x86/kernel.o
+                                         0x41 (size before relaxing)
+
+.rodata._ZTVN4Grub11GrubCheckerE
+                0x0000000000101740       0x10
+ .rodata._ZTVN4Grub11GrubCheckerE
+                0x0000000000101740       0x10 build/Debug/GNU-Linux-x86/grub.o
+                0x0000000000101740                vtable for Grub::GrubChecker
+
+.rodata._ZTVN4Core15KernelAllocatorE
+                0x0000000000101750       0x18
+ .rodata._ZTVN4Core15KernelAllocatorE
+                0x0000000000101750       0x18 build/Debug/GNU-Linux-x86/kernelallocator.o
+                0x0000000000101750                vtable for Core::KernelAllocator
+
+.rodata._ZTVN4I3863GDTE
+                0x0000000000101768       0x10
+ .rodata._ZTVN4I3863GDTE
+                0x0000000000101768       0x10 build/Debug/GNU-Linux-x86/gdt.o
+                0x0000000000101768                vtable for I386::GDT
+
+.rodata._ZTVN4Core7ConsoleE
+                0x0000000000101778       0x10
+ .rodata._ZTVN4Core7ConsoleE
+                0x0000000000101778       0x10 build/Debug/GNU-Linux-x86/console.o
+                0x0000000000101778                vtable for Core::Console
+
+.data           0x0000000000101788       0x18
+                0x0000000000101788                __CTOR_LIST__ = .
+                0x0000000000101788        0x4 LONG 0x0 (((__CTOR_END__ - __CTOR_LIST__) / 0x4) - 0x2)
+ *(.ctors)
+                0x000000000010178c        0x4 LONG 0x0
+                0x0000000000101790                __CTOR_END__ = .
+                0x0000000000101790                __DTOR_LIST__ = .
+                0x0000000000101790        0x4 LONG 0x0 (((__DTOR_END__ - __DTOR_LIST__) / 0x4) - 0x2)
+ *(.dtors)
+                0x0000000000101794        0x4 LONG 0x0
+                0x0000000000101798                __DTOR_END__ = .
+                0x0000000000101798                data = .
+                0x0000000000101798                _data = .
+                0x0000000000101798                __data = .
+ *(.data)
+                0x00000000001017a0                . = ALIGN (0x20)
+ *fill*         0x0000000000101798        0x8 00
+
+.igot.plt       0x00000000001017a0        0x0
+ .igot.plt      0x0000000000000000        0x0 build/loader.o
+
+.bss            0x00000000001017a0     0x21e0
+                0x00000000001017a0                bss = .
+                0x00000000001017a0                _bss = .
+                0x00000000001017a0                __bss = .
+ *(.bss)
+ .bss           0x00000000001017a0     0x2000 build/loader.o
+                0x00000000001027a0                _sys_stack
+                0x00000000001037a0                _tss_stack
+ .bss           0x00000000001037a0        0x4 build/Debug/GNU-Linux-x86/staticallocator.o
+                0x00000000001037a0                Core::StaticAllocator::_instance
+ .bss           0x00000000001037a4        0x4 build/Debug/GNU-Linux-x86/video.o
+                0x00000000001037a4                Core::Video::_instance
+ *fill*         0x00000000001037a8       0x18 00
+ .bss           0x00000000001037c0      0x1a4 build/Debug/GNU-Linux-x86/cppsup.o
+                0x00000000001037c0                __dso_handle
+                0x00000000001037e0                object
+                0x0000000000103960                iObject
+ .bss           0x0000000000103964        0x0 build/Debug/GNU-Linux-x86/terminal.o
+ .bss           0x0000000000103964        0x0 build/Debug/GNU-Linux-x86/grub.o
+ .bss           0x0000000000103964        0x4 build/Debug/GNU-Linux-x86/kernelallocator.o
+                0x0000000000103964                Core::KernelAllocator::_instance
+ .bss           0x0000000000103968        0x0 build/Debug/GNU-Linux-x86/kernel.o
+ .bss           0x0000000000103968        0x4 build/Debug/GNU-Linux-x86/gdt.o
+                0x0000000000103968                I386::GDT::_instance
+ .bss           0x000000000010396c        0x4 build/Debug/GNU-Linux-x86/resource.o
+                0x000000000010396c                Core::ResourceManager::_instance
+ .bss           0x0000000000103970        0x0 build/Debug/GNU-Linux-x86/architecture.o
+ .bss           0x0000000000103970        0x4 build/Debug/GNU-Linux-x86/console.o
+                0x0000000000103970                Core::Console::_instance
+                0x0000000000103980                . = ALIGN (0x20)
+ *fill*         0x0000000000103974        0xc 00
+                0x0000000000103980                end = .
+                0x0000000000103980                _end = .
+                0x0000000000103980                __end = .
+LOAD build/Debug/GNU-Linux-x86/staticallocator.o
+LOAD build/Debug/GNU-Linux-x86/video.o
+LOAD build/Debug/GNU-Linux-x86/cppsup.o
+LOAD build/Debug/GNU-Linux-x86/terminal.o
+LOAD build/Debug/GNU-Linux-x86/grub.o
+LOAD build/Debug/GNU-Linux-x86/kernelallocator.o
+LOAD build/Debug/GNU-Linux-x86/kernel.o
+LOAD build/Debug/GNU-Linux-x86/gdt.o
+LOAD build/Debug/GNU-Linux-x86/resource.o
+LOAD build/Debug/GNU-Linux-x86/architecture.o
+LOAD build/Debug/GNU-Linux-x86/console.o
+OUTPUT(dist/Debug/GNU-Linux-x86/titanium elf32-i386)
+
+.debug_abbrev   0x0000000000000000     0x142a
+ .debug_abbrev  0x0000000000000000      0x23d build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_abbrev  0x000000000000023d      0x25a build/Debug/GNU-Linux-x86/video.o
+ .debug_abbrev  0x0000000000000497      0x14a build/Debug/GNU-Linux-x86/cppsup.o
+ .debug_abbrev  0x00000000000005e1      0x244 build/Debug/GNU-Linux-x86/terminal.o
+ .debug_abbrev  0x0000000000000825      0x203 build/Debug/GNU-Linux-x86/grub.o
+ .debug_abbrev  0x0000000000000a28      0x232 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .debug_abbrev  0x0000000000000c5a      0x106 build/Debug/GNU-Linux-x86/kernel.o
+ .debug_abbrev  0x0000000000000d60      0x225 build/Debug/GNU-Linux-x86/gdt.o
+ .debug_abbrev  0x0000000000000f85      0x16e build/Debug/GNU-Linux-x86/resource.o
+ .debug_abbrev  0x00000000000010f3       0x93 build/Debug/GNU-Linux-x86/architecture.o
+ .debug_abbrev  0x0000000000001186      0x2a4 build/Debug/GNU-Linux-x86/console.o
+
+.debug_info     0x0000000000000000     0x2913
+ .debug_info    0x0000000000000000      0x4da build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_info    0x00000000000004da      0x567 build/Debug/GNU-Linux-x86/video.o
+ .debug_info    0x0000000000000a41      0x212 build/Debug/GNU-Linux-x86/cppsup.o
+ .debug_info    0x0000000000000c53      0x545 build/Debug/GNU-Linux-x86/terminal.o
+ .debug_info    0x0000000000001198      0x4ac build/Debug/GNU-Linux-x86/grub.o
+ .debug_info    0x0000000000001644      0x4b7 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .debug_info    0x0000000000001afb      0x16b build/Debug/GNU-Linux-x86/kernel.o
+ .debug_info    0x0000000000001c66      0x420 build/Debug/GNU-Linux-x86/gdt.o
+ .debug_info    0x0000000000002086      0x196 build/Debug/GNU-Linux-x86/resource.o
+ .debug_info    0x000000000000221c       0xae build/Debug/GNU-Linux-x86/architecture.o
+ .debug_info    0x00000000000022ca      0x649 build/Debug/GNU-Linux-x86/console.o
+
+.debug_line     0x0000000000000000      0x8b8
+ .debug_line    0x0000000000000000       0xcc build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_line    0x00000000000000cc       0xd4 build/Debug/GNU-Linux-x86/video.o
+ .debug_line    0x00000000000001a0       0x98 build/Debug/GNU-Linux-x86/cppsup.o
+ .debug_line    0x0000000000000238      0x11f build/Debug/GNU-Linux-x86/terminal.o
+ .debug_line    0x0000000000000357      0x105 build/Debug/GNU-Linux-x86/grub.o
+ .debug_line    0x000000000000045c       0xaf build/Debug/GNU-Linux-x86/kernelallocator.o
+ .debug_line    0x000000000000050b       0x91 build/Debug/GNU-Linux-x86/kernel.o
+ .debug_line    0x000000000000059c       0xba build/Debug/GNU-Linux-x86/gdt.o
+ .debug_line    0x0000000000000656       0xa2 build/Debug/GNU-Linux-x86/resource.o
+ .debug_line    0x00000000000006f8       0x8a build/Debug/GNU-Linux-x86/architecture.o
+ .debug_line    0x0000000000000782      0x136 build/Debug/GNU-Linux-x86/console.o
+
+.debug_loc      0x0000000000000000     0x13aa
+ .debug_loc     0x0000000000000000      0x1cb build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_loc     0x00000000000001cb      0x21c build/Debug/GNU-Linux-x86/video.o
+ .debug_loc     0x00000000000003e7      0x1d6 build/Debug/GNU-Linux-x86/cppsup.o
+ .debug_loc     0x00000000000005bd      0x2de build/Debug/GNU-Linux-x86/terminal.o
+ .debug_loc     0x000000000000089b      0x2f9 build/Debug/GNU-Linux-x86/grub.o
+ .debug_loc     0x0000000000000b94      0x1a0 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .debug_loc     0x0000000000000d34       0x68 build/Debug/GNU-Linux-x86/kernel.o
+ .debug_loc     0x0000000000000d9c      0x130 build/Debug/GNU-Linux-x86/gdt.o
+ .debug_loc     0x0000000000000ecc      0x1fe build/Debug/GNU-Linux-x86/resource.o
+ .debug_loc     0x00000000000010ca       0x56 build/Debug/GNU-Linux-x86/architecture.o
+ .debug_loc     0x0000000000001120      0x28a build/Debug/GNU-Linux-x86/console.o
+
+.debug_pubnames
+                0x0000000000000000      0x929
+ .debug_pubnames
+                0x0000000000000000      0x143 build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_pubnames
+                0x0000000000000143      0x10f build/Debug/GNU-Linux-x86/video.o
+ .debug_pubnames
+                0x0000000000000252       0xc5 build/Debug/GNU-Linux-x86/cppsup.o
+ .debug_pubnames
+                0x0000000000000317      0x10f build/Debug/GNU-Linux-x86/terminal.o
+ .debug_pubnames
+                0x0000000000000426       0xa6 build/Debug/GNU-Linux-x86/grub.o
+ .debug_pubnames
+                0x00000000000004cc      0x147 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .debug_pubnames
+                0x0000000000000613       0x1d build/Debug/GNU-Linux-x86/kernel.o
+ .debug_pubnames
+                0x0000000000000630       0xac build/Debug/GNU-Linux-x86/gdt.o
+ .debug_pubnames
+                0x00000000000006dc       0xb5 build/Debug/GNU-Linux-x86/resource.o
+ .debug_pubnames
+                0x0000000000000791       0x3d build/Debug/GNU-Linux-x86/architecture.o
+ .debug_pubnames
+                0x00000000000007ce      0x15b build/Debug/GNU-Linux-x86/console.o
+
+.debug_pubtypes
+                0x0000000000000000      0x2a6
+ .debug_pubtypes
+                0x0000000000000000       0x41 build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_pubtypes
+                0x0000000000000041       0x3d build/Debug/GNU-Linux-x86/video.o
+ .debug_pubtypes
+                0x000000000000007e       0x1d build/Debug/GNU-Linux-x86/cppsup.o
+ .debug_pubtypes
+                0x000000000000009b       0x2c build/Debug/GNU-Linux-x86/terminal.o
+ .debug_pubtypes
+                0x00000000000000c7       0xc1 build/Debug/GNU-Linux-x86/grub.o
+ .debug_pubtypes
+                0x0000000000000188       0x41 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .debug_pubtypes
+                0x00000000000001c9       0x26 build/Debug/GNU-Linux-x86/kernel.o
+ .debug_pubtypes
+                0x00000000000001ef       0x43 build/Debug/GNU-Linux-x86/gdt.o
+ .debug_pubtypes
+                0x0000000000000232       0x26 build/Debug/GNU-Linux-x86/resource.o
+ .debug_pubtypes
+                0x0000000000000258       0x23 build/Debug/GNU-Linux-x86/architecture.o
+ .debug_pubtypes
+                0x000000000000027b       0x2b build/Debug/GNU-Linux-x86/console.o
+
+.debug_aranges  0x0000000000000000      0x160
+ .debug_aranges
+                0x0000000000000000       0x20 build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_aranges
+                0x0000000000000020       0x20 build/Debug/GNU-Linux-x86/video.o
+ .debug_aranges
+                0x0000000000000040       0x20 build/Debug/GNU-Linux-x86/cppsup.o
+ .debug_aranges
+                0x0000000000000060       0x20 build/Debug/GNU-Linux-x86/terminal.o
+ .debug_aranges
+                0x0000000000000080       0x20 build/Debug/GNU-Linux-x86/grub.o
+ .debug_aranges
+                0x00000000000000a0       0x20 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .debug_aranges
+                0x00000000000000c0       0x20 build/Debug/GNU-Linux-x86/kernel.o
+ .debug_aranges
+                0x00000000000000e0       0x20 build/Debug/GNU-Linux-x86/gdt.o
+ .debug_aranges
+                0x0000000000000100       0x20 build/Debug/GNU-Linux-x86/resource.o
+ .debug_aranges
+                0x0000000000000120       0x20 build/Debug/GNU-Linux-x86/architecture.o
+ .debug_aranges
+                0x0000000000000140       0x20 build/Debug/GNU-Linux-x86/console.o
+
+.debug_ranges   0x0000000000000000      0x188
+ .debug_ranges  0x0000000000000000       0x18 build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_ranges  0x0000000000000018       0x28 build/Debug/GNU-Linux-x86/video.o
+ .debug_ranges  0x0000000000000040       0x18 build/Debug/GNU-Linux-x86/terminal.o
+ .debug_ranges  0x0000000000000058       0x38 build/Debug/GNU-Linux-x86/grub.o
+ .debug_ranges  0x0000000000000090       0x20 build/Debug/GNU-Linux-x86/gdt.o
+ .debug_ranges  0x00000000000000b0       0x30 build/Debug/GNU-Linux-x86/resource.o
+ .debug_ranges  0x00000000000000e0       0x18 build/Debug/GNU-Linux-x86/architecture.o
+ .debug_ranges  0x00000000000000f8       0x90 build/Debug/GNU-Linux-x86/console.o
+
+.debug_str      0x0000000000000000      0xddf
+ .debug_str     0x0000000000000000      0x2e3 build/Debug/GNU-Linux-x86/staticallocator.o
+                                        0x315 (size before relaxing)
+ .debug_str     0x00000000000002e3      0x1c6 build/Debug/GNU-Linux-x86/video.o
+                                        0x2e6 (size before relaxing)
+ .debug_str     0x00000000000004a9       0xa3 build/Debug/GNU-Linux-x86/cppsup.o
+                                        0x123 (size before relaxing)
+ .debug_str     0x000000000000054c      0x122 build/Debug/GNU-Linux-x86/terminal.o
+                                        0x25f (size before relaxing)
+ .debug_str     0x000000000000066e      0x1ef build/Debug/GNU-Linux-x86/grub.o
+                                        0x2f8 (size before relaxing)
+ .debug_str     0x000000000000085d      0x143 build/Debug/GNU-Linux-x86/kernelallocator.o
+                                        0x2de (size before relaxing)
+ .debug_str     0x00000000000009a0       0xd9 build/Debug/GNU-Linux-x86/kernel.o
+                                        0x189 (size before relaxing)
+ .debug_str     0x0000000000000a79      0x13f build/Debug/GNU-Linux-x86/gdt.o
+                                        0x258 (size before relaxing)
+ .debug_str     0x0000000000000bb8       0x1d build/Debug/GNU-Linux-x86/resource.o
+                                        0x154 (size before relaxing)
+ .debug_str     0x0000000000000bd5       0x51 build/Debug/GNU-Linux-x86/architecture.o
+                                         0xfa (size before relaxing)
+ .debug_str     0x0000000000000c26      0x1b9 build/Debug/GNU-Linux-x86/console.o
+                                        0x32c (size before relaxing)
+
+.comment        0x0000000000000000       0x2a
+ .comment       0x0000000000000000       0x2a build/Debug/GNU-Linux-x86/staticallocator.o
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/video.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/cppsup.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/terminal.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/grub.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/kernelallocator.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/kernel.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/gdt.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/resource.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/architecture.o
+ .comment       0x0000000000000000       0x2b build/Debug/GNU-Linux-x86/console.o
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/staticallocator.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/video.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/cppsup.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/terminal.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/grub.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/kernelallocator.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/kernel.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/gdt.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/resource.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/architecture.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/console.o
+
+.debug_frame    0x0000000000000000      0x9c8
+ .debug_frame   0x0000000000000000       0xfc build/Debug/GNU-Linux-x86/staticallocator.o
+ .debug_frame   0x00000000000000fc      0x108 build/Debug/GNU-Linux-x86/video.o
+ .debug_frame   0x0000000000000204       0xfc build/Debug/GNU-Linux-x86/cppsup.o
+ .debug_frame   0x0000000000000300      0x18c build/Debug/GNU-Linux-x86/terminal.o
+ .debug_frame   0x000000000000048c       0xc4 build/Debug/GNU-Linux-x86/grub.o
+ .debug_frame   0x0000000000000550       0xfc build/Debug/GNU-Linux-x86/kernelallocator.o
+ .debug_frame   0x000000000000064c       0x34 build/Debug/GNU-Linux-x86/kernel.o
+ .debug_frame   0x0000000000000680       0xd0 build/Debug/GNU-Linux-x86/gdt.o
+ .debug_frame   0x0000000000000750       0xb8 build/Debug/GNU-Linux-x86/resource.o
+ .debug_frame   0x0000000000000808       0x38 build/Debug/GNU-Linux-x86/architecture.o
+ .debug_frame   0x0000000000000840      0x188 build/Debug/GNU-Linux-x86/console.o
